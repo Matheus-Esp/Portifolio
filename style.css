@@ -1,0 +1,60 @@
+@font-face {
+    font-family: jetbrain-bold;
+    src: url(src/JetBrainsMono-Bold.ttf);
+}
+@font-face {
+    font-family: jetbrain-medium;
+    src: url(src/static/Montserrat-Medium.ttf);
+}
+body{
+    background-color: #111;
+    margin: 0;
+    padding: 0;
+}
+.main-container{
+    max-width: 1276px;
+    margin: auto;
+}
+
+/***********************
+    Header Components
+************************/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 73px;
+    border-bottom: 1px solid #8d8d8d;
+    font-family: 'Rubik', sans-serif;
+}
+.icons{
+    margin-left: 5px;
+}
+.contact-icon{
+    fill:#fff; 
+    width:18px; 
+    height:24px;
+    margin-right: 10px;
+}
+
+.contact-container{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+}
+.social{
+    margin-right: 15px;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    border-left: 1px solid #8d8d8d;
+    padding-left: 15px;
+    
+}
+
+
+
