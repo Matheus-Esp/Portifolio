@@ -1,0 +1,60 @@
+
+@font-face {
+    font-family: industry-medium;
+    src: url(src/industry/Industry-Medium.ttf);
+}
+.containerGrey{
+    background-color: #151515;
+    border-top: 1px solid #00ff4c55;
+    padding-top: 75px;
+}
+.skillContainer{
+    max-width: 1250px;
+    margin: auto;
+}
+.skillContainer > h2{
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+.skills{
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+   
+}
+.skillSquare{
+    text-align: center;
+    padding: 13px;
+    width: 70px;
+    height: 70px;
+    background-color: #cccccc20;
+    border: 1px solid #cccccc20;
+    border-radius: 7px;
+    transition: 0.3s;
+    box-shadow: 5px 5px 5px 5px #15151510;
+}
+
+.iconSkill{
+    width: 70px;
+    height: 70px;
+}
+
+.nameSkill{
+    text-align: center;
+    font-family: industry-medium;
+    font-size: 14px;
+    color: #ccc;
+    margin-top: 7px;
+    opacity: 0;
+    transition: 0.3s;
+}    
+
+.skillSquare:hover{
+    height: 100px;
+    background-color: #444;
+}
+
+.skillSquare:hover .nameSkill{
+    opacity: 1;  
+}    
+

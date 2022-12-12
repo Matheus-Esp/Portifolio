@@ -1,0 +1,29 @@
+.project{
+    background-color: #151515;
+    padding-top: 75px;
+}
+
+.projectContainer{
+    margin: auto;
+    max-width: 1250px;
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;  
+    grid-gap: 10px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.projectSquare{
+    width: 300px;
+    height: 400px;
+    background-color: #0b0b0b;
+}
+
+.projectContainer > h2{
+    margin-bottom: 20px;
+    font-size: 28px;
+}
