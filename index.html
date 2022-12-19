@@ -15,6 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body>
@@ -22,13 +23,19 @@
     <header>
         <div class="headerContainer">
             <a href="/"><img class="logo" src="src/logo.png" alt=""></a>
-
+            <span id="mobileMenu" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+            <span id="closeMenu" class="material-symbols-outlined" onclick="clickMenu()">close</span>
+            
             <div class="menu-container">
                 <a class="menu-items" href="/">Home</a>
                 <a class="menu-items" href="#skills">Skills</a>
                 <a class="menu-items" href="#projects">Projetos</a>
             </div>
-
+            <div id="mobileMenuContainer">
+                <a class="menu-items" href="/">Home</a>
+                <a class="menu-items" href="#skills">Skills</a>
+                <a class="menu-items" href="#projects">Projetos</a>
+            </div>
             <div class="contactContainer">
 
                 <a class="social" href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -53,7 +60,7 @@
     </header>
 
     <!-- Home -->
-
+    <script src="mobile.js"></script>
     <main>
         <section class="terminal">
             <div class="hello">
@@ -106,7 +113,7 @@
 
     <section class="containerGrey" id="skills">
 
-        <div class="skillContainer" >
+        <div class="skillContainer">
             <h2>Skills</h2>
             <div class="skills">
                 <div class="skillSquare">
@@ -260,7 +267,7 @@
     <!-------------------------------------- 
                        START PROJECTS
          -------------------------------------->
-    <div class="project" id="projects">
+    <!-- <div class="project" id="projects">
         <div class="projectContainer">
             <h2>Projetos</h2>
             <div class="projects">
@@ -275,11 +282,24 @@
 
 
         </div>
-    </div>
+    </div> -->
 
 
 
-
+    <script>
+        function clickMenu() {
+            if(mobileMenuContainer.style.display == 'flex'){
+                mobileMenuContainer.style.display = 'none'
+                closeMenu.style.display = 'none'
+                mobileMenu.style.display = 'block'
+            }else{
+                mobileMenuContainer.style.display= 'flex'
+                mobileMenu.style.display = 'none'
+                closeMenu.style.display = 'block'
+            }
+        }
+        
+    </script>
 </body>
 
 </html>

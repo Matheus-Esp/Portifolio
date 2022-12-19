@@ -22,15 +22,14 @@ body::-webkit-scrollbar {
 /***********************
     Header Components
 ************************/
-body{
-   
-}
+body {}
+
 header {
-    position: sticky; 
+    position: sticky;
     top: 0;
     height: 70px;
     margin: auto;
-    background-color: #171717e0;
+    background-color: #171717;
     border-bottom: 1PX solid #00ff4c55;
     box-shadow: 0px 5px 150px 15px #15ff0010;
 }
@@ -40,11 +39,11 @@ header {
     max-width: 1250px;
     margin: auto;
     margin-bottom: 105px;
+    padding: 0 20px 0 20px;
     justify-content: space-between;
     align-items: center;
     height: 70px;
     font-family: industry;
-
 }
 
 .logo {
@@ -53,6 +52,10 @@ header {
     align-items: center;
     justify-content: center;
 
+}
+
+button {
+    display: none;
 }
 
 .menu-container {
@@ -109,4 +112,69 @@ header {
     font-family: industry;
     color: #00ff40;
     background-color: transparent;
+}
+
+button:focus~.menu-container {
+    display: flex;
+}
+
+#mobileMenu {
+    display: none;
+    transition: 1s;
+}
+#mobileMenuContainer{
+    display: none;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    transition: 1s;
+
+}
+#closeMenu{
+    display: none;
+    position: fixed;
+    top: 25px;
+    right: 20px;
+    color: #00ff40;
+    font-size: 40px;
+    transition: 1s;
+}
+@media (max-width:700px) {
+    header {
+        height: 0;
+    }
+
+    .headerContainer {
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #171717;
+        border-bottom: 1PX solid #00ff4c55;
+        box-shadow: 0px 5px 150px 15px #15ff0010;
+    }
+
+    .logo {
+        width: 50px;
+        padding: 20px 20px 20px 0;
+    }
+
+    #mobileMenu {
+        display: block;
+        position: fixed;
+        top: 25px;
+        right: 20px;
+        color: #00ff40;
+        font-size: 40px
+    }
+    .menu-container{
+        display: none;
+    }
+    .menu-items{
+        font-size: 24px;
+        padding-bottom: 30px;
+    }
+    .contactContainer{
+        display: none;
+    }
+
 }

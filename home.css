@@ -5,14 +5,19 @@
 
 main{
     display: flex;
-    justify-content: space-between;
     max-width: 1250px;
     margin: auto;
+    padding-left: 80px;
+    padding-right: 80px;
     font-family: industry-bold;
-    padding: 115px 0 115px 0;
+    padding: 115px 20px 115px 20px;
+    flex-wrap: wrap;
+    background: url(img/bg.svg);
 }
 
 h1{
+    white-space: nowrap;
+    display: flex;
     font-size: 75px;
     color: #ccc;
     margin: 0px; 
@@ -31,6 +36,11 @@ h2{
     -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent;
     color: #00ff40;
+}
+
+.terminal{
+    flex: 1; 
+    
 }
 
 .hello{
@@ -158,4 +168,42 @@ p{
     font-size: 15px;
     color: #999;
     text-align: justify;
+}
+
+@media (max-width:1000px){
+   .terminal{
+        margin: auto;
+        flex: none;
+        margin-bottom: 50px;
+        text-align: center;
+   }
+   .hello{
+        justify-content:center ;
+   }
+  
+   .buttonHome{
+        margin: auto;
+        margin-top: 20px;
+   }
+   .aboutContainer{
+        margin: auto;
+   }
+}
+
+@media (max-width: 700px) {
+    h1{
+        font-size: 50px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    .earth{ 
+        width: 30px;
+        margin-bottom: 5px;
+        margin-left: 5px;
+    }
+    .terminal{
+        margin-top: 70px;
+        margin-bottom: 100px;
+    }
 }

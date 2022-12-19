@@ -6,11 +6,12 @@
 .containerGrey{
     background-color: #151515;
     border-top: 1px solid #00ff4c55;
-    padding-top: 75px;
+    padding-top: 20px;
 }
 .skillContainer{
     max-width: 1250px;
     margin: auto;
+    padding: 0 20px 0 20px;
 }
 .skills::-webkit-scrollbar {
     width: 0;
@@ -21,13 +22,18 @@
 }
 .skills{
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    overflow-x: auto;
-    overflow-y: hidden;
+    height: 20vh;
+    flex:1;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+
 }
 .skillSquare{
+    
+    
     text-align: center;
+    margin-top: 50px;
     padding: 13px;
     width: 70px;
     height: 70px;
@@ -60,14 +66,35 @@
 
 .skillSquare:hover .nameSkill{
     opacity: 1;  
-}    
+}
+        
+
 
 @media (max-width: 800px){
     .skills{
+        justify-content: start;
         margin-left: 20px;
         margin-right: 20px;
+        gap: 20px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        flex-wrap: nowrap;
     }
     .skillContainer > h2{
-        margin-left: 20px;
+        margin-left: 20px;   
+    } 
+    
+}
+
+@media (max-width:1000px) {
+    .skills{
+        height: 100%;
     }
+    .skillSquare{
+        height: 100px;
+        background-color: #444;
+    }
+    .nameSkill{
+        opacity: 1;  
+    }  
 }
