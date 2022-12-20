@@ -207,3 +207,25 @@ p{
         margin-bottom: 100px;
     }
 }
+@media (max-width: 450px) {
+    h1{
+        font-size: 44px;
+    }
+    h2{
+        font-size: 25px;
+    }
+    .earth{ 
+        width: 30px;
+        margin-bottom: 4px;
+        margin-left: 5px;
+    }
+    .exp-container>p{
+        font-size: 10px;
+    }
+    .description>p{
+        font-size: 14px;
+    }
+    .aboutContainer{
+        height:230px ;
+    }
+}
