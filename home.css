@@ -219,6 +219,9 @@ p{
         margin-bottom: 4px;
         margin-left: 5px;
     }
+    .aboutContainer{
+        margin-top: 0px;
+    }
     .exp-container>p{
         font-size: 10px;
     }

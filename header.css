@@ -8,6 +8,10 @@
     src: url(src/industry/Industry-Book.ttf);
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     display: block;
     background-color: #0b0b0b;
@@ -22,7 +26,7 @@ body::-webkit-scrollbar {
 /***********************
     Header Components
 ************************/
-body {}
+
 
 header {
     position: sticky;
