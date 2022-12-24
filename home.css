@@ -221,8 +221,8 @@ p{
     h2{
         font-size: 23px;
     }
-    .main{
-        padding: 115px 15px 115px 15px;
+    main{
+        padding: 30px 15px 115px 15px;
     }
     .terminal{
         text-align: center;
