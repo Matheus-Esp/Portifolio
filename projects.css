@@ -1,85 +1,97 @@
-.projectContainer{
+.projectContainer {
     max-width: 1250px;
     margin: auto;
     padding-top: 50px;
     padding-bottom: 50px;
 }
-.projects{
+
+.projects {
     display: flex;
     flex-wrap: wrap;
+    gap: 20px;
 }
-.squareContainer{
+
+.squareContainer {
     flex: 1 1 300px;
-    margin: 10px;
+    margin: auto;
     height: 300px;
+    max-width: 500px;
     background-color: #cccccc20;
     border: 1px solid #cccccc20;
     border-radius: 7px;
     box-shadow: 5px 5px 5px 5px #15151510;
     text-align: center;
 }
-.projectContainer > h2{
+
+.projectContainer>h2 {
     margin-bottom: 20px;
     font-size: 28px;
 }
 
-.thumb{
+.thumb {
     margin: 15px;
     height: 200px;
-    
     border: 1px solid #cccccc20;
     border-radius: 7px;
     box-shadow: 5px 5px 5px 5px #15151510;
     background-size: cover;
-    animation: blinkSoon 1s infinite;
+    animation: blinkSoon 2s infinite;
 }
 
-#thumb1{
+#thumb1 {
     background-image: url(src/thumb1.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
-.titleProject{
+.titleProject {
     margin: 15px;
     font-family: industry;
     color: #ccc;
 }
 
-.soon{
-  
-    animation: blinkSoon 0.5s infinite;
+.soon {
+    animation: blinkSoon 1s infinite;
 }
 
 @keyframes blinkSoon {
-    0%{
+    0% {
         background-color: #151515;
     }
-    50%{
-        background-color: #151515bb; 
+
+    50% {
+        background-color: #151515bb;
     }
-    100%{
+
+    100% {
         background-color: #151515;
     }
 }
 
-@media (max-width: 800px){
-    .projects{
+@media (max-width: 800px) {
+    .projects {
         margin-left: 20px;
         margin-right: 20px;
     }
-    .projectContainer > h2{
-        margin-left: 20px;   
-    } 
-    
+
+    .projectContainer>h2 {
+        margin-left: 20px;
+    }
+
+    .projectContainer {
+        padding-top: 0;
+    }
+
 }
 
-@media (max-width: 1300px){
-    .projects{
+@media (max-width: 1300px) {
+    .projects {
         margin-left: 20px;
         margin-right: 20px;
     }
-    .projectContainer > h2{
-        margin-left: 20px;   
-    } 
-    
-}
 
+    .projectContainer>h2 {
+        margin-left: 20px;
+    }
+
+}

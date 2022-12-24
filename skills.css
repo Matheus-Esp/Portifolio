@@ -1,39 +1,43 @@
-
 @font-face {
     font-family: industry-medium;
     src: url(src/industry/Industry-Medium.ttf);
 }
-.containerGrey{
+
+.containerGrey {
     background-color: #151515;
     border-top: 1px solid #00ff4c55;
     border-bottom: 1px solid #00ff4c55;
     padding-top: 20px;
 }
-.skillContainer{
+
+.skillContainer {
     max-width: 1250px;
     margin: auto;
-    
+
 }
+
 .skills::-webkit-scrollbar {
     width: 0;
 }
-.skillContainer > h2{
+
+.skillContainer>h2 {
     margin-top: 50px;
     margin-bottom: 20px;
     font-size: 28px;
 }
-.skills{
+
+.skills {
     display: flex;
     height: 20vh;
-    flex:1;
+    flex: 1;
     gap: 15px;
     flex-wrap: wrap;
     justify-content: center;
 
 }
-.skillSquare{
+
+.skillSquare {
     text-align: center;
-    margin-top: 10px;
     padding: 13px;
     width: 70px;
     height: 70px;
@@ -44,12 +48,12 @@
     box-shadow: 5px 5px 5px 5px #15151510;
 }
 
-.iconSkill{
+.iconSkill {
     width: 70px;
     height: 70px;
 }
 
-.nameSkill{
+.nameSkill {
     text-align: center;
     font-family: industry-medium;
     font-size: 14px;
@@ -57,44 +61,58 @@
     margin-top: 10px;
     opacity: 0;
     transition: 0.3s;
-}    
+}
 
-.skillSquare:hover{
+.skillSquare:hover {
     height: 100px;
     background-color: #444;
 }
 
-.skillSquare:hover .nameSkill{
-    opacity: 1;  
+.skillSquare:hover .nameSkill {
+    opacity: 1;
 }
-        
 
 
-@media (max-width: 800px){
-    .skills{
-      
+
+@media (max-width: 800px) {
+    .skills {
+
         justify-content: start;
-        margin-left: 30px;
         gap: 20px;
         overflow-x: auto;
         overflow-y: hidden;
         flex-wrap: nowrap;
     }
-    .skillContainer > h2{
-        margin-left: 20px;   
-    } 
-    
+
+    .skillContainer>h2 {
+        margin-top: 0;
+        margin-left: 20px;
+    }
+
+    .containerGrey {
+        margin-top: 0;
+    }
+
+    #firtSkill {
+        margin-left: 22px;
+    }
+
+    #lastSkill {
+        margin-right: 22px;
+    }
 }
 
 @media (max-width:1227px) {
-    .skills{
+    .skills {
         height: 100%;
     }
-    .skillSquare{
+
+    .skillSquare {
         height: 100px;
         background-color: #cccccc20;
     }
-    .nameSkill{
-        opacity: 1;  
-    }  
+
+    .nameSkill {
+        opacity: 1;
+    }
 }

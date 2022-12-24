@@ -1,11 +1,11 @@
-footer{
+footer {
     max-width: 1250px;
     margin: auto;
-  
+
 
 }
 
-.footerContainer{
+.footerContainer {
     height: 250px;
     display: flex;
     text-align: center;
@@ -13,20 +13,21 @@ footer{
     font-family: industry;
 }
 
-h3{
+h3 {
     color: #00ff40;
 }
 
-a{
+a {
     text-decoration: none;
     color: #00ff40;
     transition: 0.5s;
 }
-a:hover{
+
+a:hover {
     color: #ccc;
 }
 
-.socialFooter{
+.socialFooter {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,7 +38,7 @@ a:hover{
     gap: 10px;
 }
 
-.end{
+.end {
     margin-top: 50px;
     font-size: 12px;
     color: #ccc;
