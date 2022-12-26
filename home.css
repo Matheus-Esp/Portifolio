@@ -85,6 +85,9 @@ h2 {
     border-radius: 6px;
     background-image: linear-gradient(45deg, #15b390, #00ff40);
 }
+.buttonHome::visited{
+    color: #0a0a0a;
+}
 
 .aboutContainer {
     width: 321px;

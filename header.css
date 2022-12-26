@@ -121,6 +121,7 @@ button {
 #mobileMenu {
     display: none;
     transition: 1s;
+    color: transparent;
 }
 
 #mobileMenuContainer {
